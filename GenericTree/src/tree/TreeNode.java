@@ -1,0 +1,15 @@
+package tree;
+
+import java.util.ArrayList;
+
+public class TreeNode<T> {
+
+	T data ; 
+	ArrayList<TreeNode<T>> child ; 
+	
+	public TreeNode(T data) {
+		this.data = data ;
+		this.child = new ArrayList<>() ; 
+	}
+	
+}
