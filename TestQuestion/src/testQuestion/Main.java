@@ -1,31 +1,24 @@
 package testQuestion;
 
-
-
-	class Vehicle {
-	    int seats;
-	    int speed;
-
-	    public Vehicle(int seats, int speed) {
-	    System.out.print("Vehicle ");
-	    this.seats = seats;
-	    this.speed = speed;
-	    }
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+     Scanner sc =new Scanner(System.in);
+    int t;
+    int b ;
+    long a;
+    t=sc.nextInt();
+    while(t>0){
+       a=sc.nextInt(); 
+       b =sc.nextInt();
+       long product=1;
+       while(a>0){
+           product=(product*a)%b;
+           a--;
+       }
+       System.out.println(product);
+       t--;
+    }
 	}
-
-	class Car extends Vehicle {
-	    int id;
-	    Car() {
-	    System.out.print("Car ");
-	    }
-	}
-
-	class Main {
-	    public static void main(String args[]) {
-	    Car c = new Car();
-	    }        
-	}
-
-	
-	
-
+}
